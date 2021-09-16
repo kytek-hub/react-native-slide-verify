@@ -7,12 +7,12 @@
     "lib/",
     "src/"
   ],
-  "homepage": "https://github.com/Jancat/react-native-slide-verify",
+  "homepage": "https://github.com/kytek-hub/react-native-slide-verify",
   "repository": {
-    "url": "https://github.com/Jancat/react-native-slide-verify.git",
+    "url": "https://github.com/kytek-hub/react-native-slide-verify.git",
     "type": "git"
   },
-  "bugs": "https://github.com/Jancat/react-native-slide-verify/issues",
+  "bugs": "https://github.com/kytek-hub/react-native-slide-verify/issues",
   "author": "Jancat <510675621@qq.com> (https://github.com/Jancat)",
   "license": "MIT",
   "private": false,
