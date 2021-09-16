@@ -28,8 +28,8 @@ export default StyleSheet.create({
     width: '100%',
     height: 45,
     borderWidth: 1,
-    borderColor: '#e4e7eb',
-    backgroundColor: '#f7f9fa'
+    borderColor: '#303030',
+    backgroundColor: '#303030'
   },
   slideIndicator: {
     height: '100%',
