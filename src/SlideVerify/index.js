@@ -105,11 +105,11 @@ export default class SlideVerification extends Component {
   constructor(props)
   {
     super(props)
-    const { iconSet } = this.props
+    const { iconSet } = props
     if(iconSet){
       slidingStyles.READY.icon = iconSet.READY
       slidingStyles.MOVING.icon = iconSet.MOVING
-      slidingStyles.VERIFY_PASS.icon = iconSet.READY
+      slidingStyles.VERIFY_PASS.icon = iconSet.VERIFY_PASS
       slidingStyles.VERIFY_FAIL.icon = iconSet.VERIFY_FAIL
     }
   }
