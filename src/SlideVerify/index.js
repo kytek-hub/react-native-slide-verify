@@ -102,6 +102,18 @@ export default class SlideVerification extends Component {
     lastResult: null
   }
 
+  constructor(props)
+  {
+    super(props)
+    const { iconSet } = this.props
+    if(iconSet){
+      slidingStyles.READY.icon = iconSet.READY
+      slidingStyles.MOVING.icon = iconSet.MOVING
+      slidingStyles.VERIFY_PASS.icon = iconSet.READY
+      slidingStyles.VERIFY_FAIL.icon = iconSet.VERIFY_FAIL
+    }
+  }
+
   componentWillMount() {
     this.panResponder = PanResponder.create({
       // Ask to be the responder:
