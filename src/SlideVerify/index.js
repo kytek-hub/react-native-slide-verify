@@ -40,10 +40,10 @@ const generateSlidingStyles = (
 })
 
 const slidingStyles = {
-  READY: generateSlidingStyles('arrow-right', '#5C6167', '#252525', '#454545', '#454545'),
-  MOVING: generateSlidingStyles('arrow-right', undefined, '#252525', '#454545', '#454545'),
-  VERIFY_PASS: generateSlidingStyles('check', undefined, '#252525', '#454545', '#454545'),
-  VERIFY_FAIL: generateSlidingStyles('x', undefined, '#252525', '#454545', '#454545')
+  READY: generateSlidingStyles('arrow-right', '#5C6167', '#252525', undefined, '#454545'),
+  MOVING: generateSlidingStyles('arrow-right', undefined, '#252525', undefined, '#454545'),
+  VERIFY_PASS: generateSlidingStyles('check', undefined, '#252525', undefined, '#454545'),
+  VERIFY_FAIL: generateSlidingStyles('x', undefined, '#252525', undefined, '#454545')
 }
 
 export default class SlideVerification extends Component {
