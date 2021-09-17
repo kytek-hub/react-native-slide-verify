@@ -40,10 +40,10 @@ const generateSlidingStyles = (
 })
 
 const slidingStyles = {
-  READY: generateSlidingStyles('arrow-right', '#5C6167', 'white', '#e4e7eb', '#454545'),
-  MOVING: generateSlidingStyles('arrow-right', undefined, '#1991fa', undefined, '#454545'),
-  VERIFY_PASS: generateSlidingStyles('check', undefined, '#52ccba', undefined, '#B3E4D5'),
-  VERIFY_FAIL: generateSlidingStyles('x', undefined, '#f57a7a', undefined, '#FDB6BA')
+  READY: generateSlidingStyles('arrow-right', '#5C6167', 'white', '#454545', '#454545'),
+  MOVING: generateSlidingStyles('arrow-right', undefined, '#1991fa', '#454545', '#454545'),
+  VERIFY_PASS: generateSlidingStyles('check', undefined, '#52ccba', '#454545', '#454545'),
+  VERIFY_FAIL: generateSlidingStyles('x', undefined, '#f57a7a', '#454545', '#454545')
 }
 
 export default class SlideVerification extends Component {
@@ -332,7 +332,7 @@ export default class SlideVerification extends Component {
             ]}
             {...this.panResponder.panHandlers}
           >
-            {verifying ? <ActivityIndicator color="white" /> : slideStatus.icon}
+            {verifying ? <ActivityIndicator color="#252525" /> : slideStatus.icon}
           </Animated.View>
           {!moving && result === null && <Text style={styles.slideTips}>{slideTips}</Text>}
         </View>
